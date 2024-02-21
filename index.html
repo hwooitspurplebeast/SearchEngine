@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Embedded Website</title>
 <style>
     body, html {
         margin: 0;
         padding: 0;
+        overflow: hidden; /* Prevent further zooming */
     }
     iframe {
         width: 100%;
         height: 100vh;
         border: none; /* Removing iframe border */
-        transform: scale(2.2); /* Zooming the iframe by 10% */
+        transform: scale(1.1); /* Zooming the iframe by 10% */
         transform-origin: 0 0; /* Setting the origin of the scaling to top left corner */
     }
 </style>
